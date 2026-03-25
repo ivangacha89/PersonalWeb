@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio | Ivan Gachancipa</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ░░ CURSOR PERSONALIZADO ░░ -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- ░░ NAVEGACIÓN ░░ -->
+  <nav class="nav" id="navbar">
+    <div class="nav__logo">
+      <span class="nav__logo-bracket">&lt;</span>
+      <span class="nav__logo-name">TuNombre</span>
+      <span class="nav__logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav__links">
+      <li><a href="#sobre-mi"    class="nav__link">inicio</a></li>
+      <li><a href="#habilidades" class="nav__link">habilidades</a></li>
+      <li><a href="#proyectos"   class="nav__link">proyectos</a></li>
+      <li><a href="#contacto"    class="nav__link">contacto</a></li>
+    </ul>
+    <button class="nav__menu-btn" id="menuBtn" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ░░ MENÚ MOBILE ░░ -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#sobre-mi"    class="mobile-link">inicio</a></li>
+      <li><a href="#habilidades" class="mobile-link">habilidades</a></li>
+      <li><a href="#proyectos"   class="mobile-link">proyectos</a></li>
+      <li><a href="#contacto"    class="mobile-link">contacto</a></li>
+    </ul>
+  </div>
+
+  <!-- ░░ HERO / SOBRE MÍ ░░ -->
+  <section class="hero" id="sobre-mi">
+    <canvas class="hero__canvas" id="heroCanvas"></canvas>
+    <div class="hero__content">
+      <h1 class="hero__title reveal">
+        <span class="hero__title-line">Hola, soy</span>
+        <span class="hero__title-name">Ivan Gachancipa</span>
+      </h1>
+      <p class="hero__subtitle reveal">
+        <span class="accent">Desarrollador de Software</span> &amp; <span class="accent">Analista de Datos</span><br />
+        Construyendo soluciones desde el frontend hasta los datos.
+      </p>
+      <div class="hero__bio reveal">
+        <p>
+          Apasionado por crear experiencias web funcionales y extraer valor de los datos.
+          Me especializo en el desarrollo frontend, backend y análisis de datos, buscando
+          siempre soluciones limpias y eficientes.
+        </p>
+      </div>
+      <div class="hero__actions reveal">
+        <a href="#proyectos" class="btn btn--primary">ver proyectos</a>
+        <a href="#contacto"  class="btn btn--ghost">informacion de contacto</a>
+      </div>
+    </div>
+    <div class="hero__scroll-indicator">
+      <span>scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ░░ HABILIDADES ░░ -->
+  <section class="section skills" id="habilidades">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">// 01</span>
+        <h2 class="section__title">Habilidades</h2>
+        <p class="section__desc">Stack tecnológico con el que trabajo día a día.</p>
+      </div>
+
+      <div class="skills__grid">
+
+        <!-- Frontend -->
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
+            </svg>
+          </div>
+          <h3 class="skill-card__title">Frontend</h3>
+          <div class="skill-card__tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">React</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Tailwind</span>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M5 12H19M12 5l7 7-7 7"/>
+            </svg>
+          </div>
+          <h3 class="skill-card__title">Backend</h3>
+          <div class="skill-card__tags">
+            <span class="tag">Node.js</span>
+            <span class="tag">Python</span>
+            <span class="tag">Express</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">MongoDB</span>
+          </div>
+        </div>
+
+        <!-- Análisis de Datos -->
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M3 3v18h18"/><path d="M7 16l4-4 4 4 4-8"/>
+            </svg>
+          </div>
+          <h3 class="skill-card__title">Análisis de Datos</h3>
+          <div class="skill-card__tags">
+            <span class="tag">Python</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">NumPy</span>
+            <span class="tag">SQL</span>
+            <span class="tag">Power BI</span>
+            <span class="tag">Matplotlib</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ PROYECTOS ░░ -->
+  <section class="section projects" id="proyectos">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">// 02</span>
+        <h2 class="section__title">Proyectos</h2>
+        <p class="section__desc">Una selección de trabajos recientes.</p>
+      </div>
+
+      <!-- Filtros -->
+      <div class="projects__filters reveal">
+        <button class="filter-btn active" data-filter="all">todos</button>
+        <button class="filter-btn" data-filter="frontend">frontend</button>
+        <button class="filter-btn" data-filter="backend">backend</button>
+        <button class="filter-btn" data-filter="datos">datos</button>
+      </div>
+
+      <!-- Cards de proyectos -->
+      <div class="projects__grid" id="projectsGrid">
+
+        <article class="project-card reveal" data-category="frontend">
+          <div class="project-card__header">
+            <span class="project-card__category">Frontend</span>
+            <div class="project-card__links">
+              <a href="#" class="project-link" title="GitHub" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </a>
+              <a href="#" class="project-link" title="Demo" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__title">Nombre del Proyecto</h3>
+          <p class="project-card__desc">Descripción breve del proyecto. Qué problema resuelve, cómo lo hiciste y qué impacto tuvo.</p>
+          <div class="project-card__stack">
+            <span class="tag tag--sm">React</span>
+            <span class="tag tag--sm">CSS</span>
+            <span class="tag tag--sm">JavaScript</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="backend">
+          <div class="project-card__header">
+            <span class="project-card__category">Backend</span>
+            <div class="project-card__links">
+              <a href="#" class="project-link" title="GitHub" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </a>
+              <a href="#" class="project-link" title="Demo" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__title">API REST de Ejemplo</h3>
+          <p class="project-card__desc">Descripción breve del proyecto. Qué problema resuelve, cómo lo hiciste y qué impacto tuvo.</p>
+          <div class="project-card__stack">
+            <span class="tag tag--sm">Node.js</span>
+            <span class="tag tag--sm">Express</span>
+            <span class="tag tag--sm">MongoDB</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="datos">
+          <div class="project-card__header">
+            <span class="project-card__category">Datos</span>
+            <div class="project-card__links">
+              <a href="#" class="project-link" title="GitHub" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </a>
+              <a href="#" class="project-link" title="Demo" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__title">Análisis Exploratorio</h3>
+          <p class="project-card__desc">Descripción breve del proyecto. Qué problema resuelve, cómo lo hiciste y qué impacto tuvo.</p>
+          <div class="project-card__stack">
+            <span class="tag tag--sm">Python</span>
+            <span class="tag tag--sm">Pandas</span>
+            <span class="tag tag--sm">Matplotlib</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="frontend">
+          <div class="project-card__header">
+            <span class="project-card__category">Frontend</span>
+            <div class="project-card__links">
+              <a href="#" class="project-link" title="GitHub" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </a>
+              <a href="#" class="project-link" title="Demo" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__title">Otro Proyecto Frontend</h3>
+          <p class="project-card__desc">Descripción breve del proyecto. Qué problema resuelve, cómo lo hiciste y qué impacto tuvo.</p>
+          <div class="project-card__stack">
+            <span class="tag tag--sm">HTML</span>
+            <span class="tag tag--sm">CSS</span>
+            <span class="tag tag--sm">JavaScript</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="datos">
+          <div class="project-card__header">
+            <span class="project-card__category">Datos</span>
+            <div class="project-card__links">
+              <a href="#" class="project-link" title="GitHub" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </a>
+              <a href="#" class="project-link" title="Demo" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__title">Dashboard de Métricas</h3>
+          <p class="project-card__desc">Descripción breve del proyecto. Qué problema resuelve, cómo lo hiciste y qué impacto tuvo.</p>
+          <div class="project-card__stack">
+            <span class="tag tag--sm">SQL</span>
+            <span class="tag tag--sm">Power BI</span>
+            <span class="tag tag--sm">Python</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="backend">
+          <div class="project-card__header">
+            <span class="project-card__category">Backend</span>
+            <div class="project-card__links">
+              <a href="#" class="project-link" title="GitHub" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </a>
+              <a href="#" class="project-link" title="Demo" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__title">Microservicio de Autenticación</h3>
+          <p class="project-card__desc">Descripción breve del proyecto. Qué problema resuelve, cómo lo hiciste y qué impacto tuvo.</p>
+          <div class="project-card__stack">
+            <span class="tag tag--sm">Python</span>
+            <span class="tag tag--sm">FastAPI</span>
+            <span class="tag tag--sm">PostgreSQL</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ CONTACTO ░░ -->
+  <section class="section contact" id="contacto">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">// 03</span>
+        <h2 class="section__title">Información de contacto</h2>
+        <p class="section__desc">¿Tienes un proyecto o quieres colaborar? Hablemos.</p>
+      </div>
+
+      <div class="contact__layout contact__layout--solo">
+        <div class="contact__info reveal">
+          <p class="contact__text">
+            Estoy disponible para oportunidades
+            de trabajo. No dudes en escribirme.
+          </p>
+          <div class="contact__links">
+            <a href="ivangacha@gmail.com" class="contact__link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              ivangacha@gmail.com
+            </a>
+            <a href="https://github.com/ivangacha89" target="_blank" rel="noopener" class="contact__link">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+              </svg>
+              github.com/ivangacha89
+            </a>
+            <a href="https://linkedin.com/in/ivan-gachancipa-manrique-874487262" target="_blank" rel="noopener" class="contact__link">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+              linkedin.com/in/ivan-gachancipa-manrique-874487262
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">
+        <span class="nav__logo-bracket">&lt;</span>
+        <span>Ivan Gachancipa</span>
+        <span class="nav__logo-bracket">/&gt;</span>
+        &nbsp;&mdash;&nbsp; Diseñado y construido con ❤️
+      </p>
+      <p class="footer__copy">© <span id="year"></span> Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
